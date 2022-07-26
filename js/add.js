@@ -1,0 +1,10 @@
+var x = 45;
+var y = 78;
+var z = 45.10;
+var w = 178.12;
+var a  = x + y;
+var b = z + w;
+var newParagraph3 = document.createElement("p");
+var newText3 = document.createTextNode("x + y = "+a+" and z + w = "+b);
+newParagraph3.appendChild(newText3);
+document.body.appendChild(newParagraph3);
