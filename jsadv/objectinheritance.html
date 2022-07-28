@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+const student = {
+    name: 'John',
+    age: 20,
+    hobbies: ['reading', 'games', 'coding'],
+};
+
+const person = {
+    gender: 'male'
+}
+
+student.__proto__ = person;
+
+for (let key in student) {
+    let value;
+
+
+    value = student[key];
+
+    document.write(key + " - " +  value);
+}
+</script>
+</body>
+</html>
